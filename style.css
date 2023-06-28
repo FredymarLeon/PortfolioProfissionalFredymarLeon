@@ -69,7 +69,7 @@ header{
     position: absolute;
     top: -90px;
     left: -90px;
-    }
+}
 
 .perfil-redes{
     background-image: url("Imagens/fredymar.jpgp.jpg");
@@ -85,7 +85,6 @@ header{
     text-decoration: none;
     position: absolute;
 }
-
 .gitbuh-link{
     bottom: -20px;
     left: 15px;
