@@ -14,6 +14,7 @@ header{
     align-items: center;
     padding: 0 40px;
     height: 80px;
+    opacity: 0.7;
 }
 
 .img-container {
@@ -33,11 +34,13 @@ header{
   transition: 0.3s ease-in-out;
   margin-right: 8px;
   text-transform: uppercase;
+  border-radius: 40%;
 }
 
 .nav__items a:hover{
- background-color: rgb(169, 169, 169);
+ background-color: rgb(236, 199, 192);
  color:#3c2e3d;
+ opacity: 1;
 }
 
 .img-fondo-container{
@@ -50,14 +53,14 @@ header{
     height: 100%;
 }
 
-#Presentacion {
+#Presentacao {
     background-color: rgb(236, 199, 192);
     padding: 16px 0;
     display: flex;
     justify-content: center;
 }
 
-.presentacion-content{
+.presentacao-content{
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -69,6 +72,17 @@ header{
     top: -90px;
     left: 0px;
     }
+
+  .presentacao-container a{
+    color:  #3c2e3d;
+    background-color: rgb(236, 199, 192);
+  }
+
+  .presentacao-container a:hover{
+    text-decoration: navajowhite;
+    background-color: #3c2e3d;
+    color:#dae9e4;
+  }
 
 .perfil-redes{
     background-image: url("fredymar.jpgp.jpg");
@@ -113,7 +127,7 @@ header{
     transform: scale(1.2);
 }
 
-.presentacion-container{
+.presentacao-container{
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -129,7 +143,7 @@ header{
 
 /*Formacion*/
 
-#Formacion{
+#Formacao{
   background-color: #dae9e4;
   padding: 16px 0;
   display: flex;
@@ -137,17 +151,17 @@ header{
   color: rgb(0, 0, 0);
 }
 
-.Formacion-container{
+.Formacao-container{
   width: 50%;
 }
 
-.Formacion-container h2{
+.Formacao-container h2{
   font-weight: 700px;
   font-style: italic;
   color:rgb(87, 86, 86)
 }
 
-.Formacion-item{
+.Formacao-item{
   margin-top: 16px;
   padding-left: 8px;
   border-left: 6px solid rgb(0, 0, 0);
@@ -163,7 +177,7 @@ header{
     font-size: 14px;
 }
 
-.institucion{
+.instituicao{
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -185,6 +199,7 @@ header{
   font-weight: 700px;
   font-style: italic;
   color:rgb(87, 86, 86)
+
 }
 
 .Experiencia-item{
@@ -195,12 +210,12 @@ header{
 }
 
 .ano{
-    font-size: 14px;
-    text-transform: uppercase;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .ocupacao{
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .empresa{
@@ -208,45 +223,50 @@ header{
     text-transform: uppercase;
 }
 
-#proyectos{
-    padding: 16px 0;
-    background-color:  rgb(236, 199, 192);
-    color: white;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
+#Projetos{
+  padding: 16px 0;
+  background-color:  rgb(236, 199, 192);
+  color:  #3c2e3d;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px solid;
 }
 
 .card-body a {
-    font-size: 14px;
-    padding: 4px 8px;
+  font-size: 14px;
+  padding: 4px 8px;
+    
   }
   
-  .botones {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    background-color: #3c2e3d;
-    border-radius: 4px;
+.card-botoes a{
+  display: flex center;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #3c2e3d;
+  border-radius: 4px;
   }
   
-  .card-container {
-    width: 50%;
+.card-container {
+  width: 50%;
   }
   
-  .cards-content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
+.cards-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
   }
   
   .card-title {
     font-size: 14px;
+    line-height: 14px;
+    color:#3c2e3d;
   }
   
   .card-text {
     font-size: 14px;
+    line-height: 14px;
+    color: rgb(139, 203, 200);
   }
   
   .card {
