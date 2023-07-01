@@ -1,25 +1,26 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  cursor: inherit;
 }
 
 header{
-    display: flex;
-    background-color: rgb(60, 46, 61);
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-    height: 80px;
-    opacity: 0.7;
+  display: flex;
+  background-color: rgb(60, 46, 61);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 80px;
+  opacity: 0.7;
 }
 
 .img-container {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 .img-container img{
@@ -29,126 +30,143 @@ header{
 }
 
 .nav__items a{
-  color: rgb(250, 249, 249);
+  color:rgb(60, 46, 61);
   padding: 8px;
   transition: 0.3s ease-in-out;
   margin-right: 8px;
   text-transform: uppercase;
-  border-radius: 40%;
+  border-radius: 5%;
+  background-color: rgb(236, 199, 192);
+  border: 1px solid black;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .nav__items a:hover{
- background-color: rgb(236, 199, 192);
- color:#3c2e3d;
- opacity: 1;
+  background-color: rgb(253, 174, 132);
+  color: rgb(250, 249, 249);
+  opacity: 1;
+  border-radius: 45%;
+  cursor: pointer;
+}
+
+.nav__items a:active{
+  color:black;
+  background-color: rgb(255, 255, 255);
 }
 
 .img-fondo-container{
-    width: 100%;
-    height: 200px;
+  width: 100%;
+  height: 200px;
 }
 
 .img-fondo-container img{
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #Presentacao {
-    background-color: rgb(236, 199, 192);
-    padding: 16px 0;
-    display: flex;
-    justify-content: center;
+  background-color: rgb(236, 199, 192);
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .presentacao-content{
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 50%;
 }
 
 .perfil-redes-container{
-    position: absolute;
-    top: -90px;
-    left: 0px;
-    }
+  position: absolute;
+  top: -90px;
+  left: 0px;
+}
 
-  .presentacao-container a{
-    color:  #3c2e3d;
-    background-color: rgb(236, 199, 192);
-  }
+.presentacao-container a{
+  color:  #3c2e3d;
+  background-color: rgb(236, 199, 192);
+}
 
-  .presentacao-container a:hover{
-    text-decoration: navajowhite;
-    background-color: #3c2e3d;
-    color:#dae9e4;
-  }
+.presentacao-container a:hover{
+  text-decoration: underline rgb(255, 222, 173);
+  background-color: #3c2e3d;
+  color:#dae9e4;
+  cursor: pointer;
+}
 
 .perfil-redes{
-    background-image: url("fredymar.jpgp.jpg");
-    width: 180px;
-    height: 180px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    border-radius: 50%;
+  background-image: url("fredymar.jpgp.jpg");
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .perfil-redes a{
-    text-decoration: none;
-    position: absolute;
+  text-decoration: none;
+  position: absolute;
 }
 
 .gitbuh-link{
-    bottom: -20px;
-    left: 15px;
+  bottom: -20px;
+  left: 15px;
 }
 
 .linkdin-link{
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .facebook-link{
-    bottom: -20px;
-    right: 15px;
+  bottom: -20px;
+  right: 15px;
 }
 
 .perfil-redes img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: 0.3s;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: 0.3s;
 }
 
 .perfil-redes img:hover{
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .presentacao-container{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: start;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
 }
 
 .titulo {
-    font-size: 20px;
-    font-weight: 300;
-    font-style: italic;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
 }
 
 /*Formacion*/
 
 #Formacao{
   background-color: #dae9e4;
-  padding: 16px 0;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
   color: rgb(0, 0, 0);
+  border-width: 2px;
+  border-style:outset;
+  border-color: rgb(139, 203, 200);
 }
 
 .Formacao-container{
@@ -158,28 +176,37 @@ header{
 .Formacao-container h2{
   font-weight: 700px;
   font-style: italic;
-  color:rgb(87, 86, 86)
+  letter-spacing: 1px;
+  color:rgb(87, 86, 86);
 }
 
-.Formacao-item{
-  margin-top: 16px;
+.Formacao-item1{
+  margin-top: 17px;
   padding-left: 8px;
-  border-left: 6px solid rgb(0, 0, 0);
+  border-left: 6px solid  rgb(236, 199, 192);;
   border-radius: 5px;
 }
 
+.Formacao-item2{
+  margin-top: 25px;
+  padding-left: 8px;
+  border-left: 6px solid rgb(60, 46, 61);
+  border-radius: 5px;
+}
 .ano{
-    font-size: 14px;
-    text-transform: uppercase;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1px;
 }
 
 .diploma{
-    font-size: 14px;
+  font-size: 14px;
+  line-height: 1px;
 }
 
 .instituicao{
-    font-size: 14px;
-    text-transform: uppercase;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 /*Experiencia*/
@@ -189,6 +216,9 @@ header{
   display: flex;
   justify-content: center;
   color: rgb(0, 0, 0);
+  border-width: 2px;
+  border-style:outset;
+  border-color:  rgb(218, 233, 228);
 }
 
 .Experiencia-container{
@@ -199,30 +229,46 @@ header{
   font-weight: 700px;
   font-style: italic;
   color:rgb(87, 86, 86)
-
 }
 
-.Experiencia-item{
+.Experiencia-item1{
   margin-top: 16px;
   padding-left: 8px;
+  border-left: 6px solid rgb(236, 199, 192);
+  border-radius: 5px;
+}
+
+.Experiencia-item2{
+  margin-top: 20px;
+  padding-left: 8px;
   border-left: 6px solid rgb(250, 250, 250);
+  border-radius: 5px;
+}
+
+.Experiencia-item3{
+  margin-top: 20px;
+  padding-left: 8px;
+  border-left: 6px solid rgb(253, 174, 132);
   border-radius: 5px;
 }
 
 .ano{
   font-size: 14px;
   text-transform: uppercase;
+  line-height: 1px;
 }
 
 .ocupacao{
   font-size: 14px;
+  line-height: 1px;
 }
 
 .empresa{
-    font-size: 14px;
-    text-transform: uppercase;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
+/*Projetos*/
 #Projetos{
   padding: 16px 0;
   background-color:  rgb(236, 199, 192);
@@ -235,24 +281,24 @@ header{
 .card-body a {
   font-size: 14px;
   padding: 4px 8px;
-    
   }
   
-.card-botoes a{
-  display: flex center;
-  width: 100%;
+.card-botoes {
+  display: inline-block;
+  width: fit-content;
   justify-content: space-between;
-  background-color: #3c2e3d;
   border-radius: 4px;
+  text-decoration: none;
   }
-  
+
 .card-container {
   width: 50%;
+
   }
   
 .cards-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-a;
   width: 100%;
   flex-wrap: wrap;
   }
@@ -263,18 +309,26 @@ header{
     color:#3c2e3d;
   }
   
-  .card-text {
+.card-text {
     font-size: 14px;
     line-height: 14px;
     color: rgb(139, 203, 200);
   }
   
-  .card {
+.card {
     width: 32%;
     margin-bottom: 8px;
+    border-bottom: 1px solid rgb(245 245 245);
+    box-shadow: 0 1px 0 rgb(0 0 0 / 12%);
   }
-  
+
+.card:hover{
+  cursor: pointer;
+  border-bottom: 1px solid rgb(60, 46, 61);
+  box-shadow: 0 0 2px 2px rgb(0 0 0 / 12%), 0 10px 16px 0 rgb(0 0 0 / 12%);;
+
+}
   .card-container h2 {
-    font-weight: 300;
+    font-weight: 500;
     font-style: italic;
   }
