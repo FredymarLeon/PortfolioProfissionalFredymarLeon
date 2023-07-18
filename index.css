@@ -214,11 +214,11 @@ header{
 #Experiencia{
   padding: 20px 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: relative;
-  width: 50%;
+  width: 100%;
 }
-
+  
 .Experiencia-container{
   width: 50%;
 }
@@ -226,7 +226,7 @@ header{
 .Experiencia-container h2{
   font-weight: 700px;
   font-style: italic;
-  color:rgb(87, 86, 86)
+  color:rgb(87, 86, 86);
 }
 
 .Experiencia-item1{
@@ -350,95 +350,83 @@ header{
 
 /*Contato*/
 
-#Contato{
-  padding: 20px;
-  background-color: #3c2e3d;
-  color: rgb(0, 0, 0);
-  border-width: 2px;
-  border-style:outset;
-  display: flex;
-  justify-content: center;
-  height: 600px;
-  }
+#Contato1{
+background-color:#3c2e3d;
+width: 100%;
+}
 
-.contato-container{
-  width: 100%;
-  justify-content: center;
-  }
-
-.contato-container h1{
+#Contato1 h1{
   font-style: italic;
-  font-weight: 295px;
+  font-weight: 300px;
   color: #fdae84;
   padding-left: 20%;
+  padding-top: 10px;
 }
 
-.contato-conteudo{
-  width: 100%;
+.contato-container1{
+  background-color:#3c2e3d;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
-.contato-informacao{
+
+.contato-conteudo1{
+  background-color: #3c2e3d;
   width: 50%;
   font-family: sans-serif;
-  font-weight: 40%;
-  font-size: 18px;
+  font-size: 20px;
   color: #fdae84;
-  justify-content: end;
-  padding-left: 20%;
+  height: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .icones-contato{
-  width: 70%;
   display: flex;
+  align-items:baseline;
+  margin-right: 30px;
 }
 
 .icones-contato img{
   width: 70%;
   height: 70%;
-  border: 2px solid wheat;
-  border-radius: 10px;
+  border: 2px solid rgb(252, 175, 133);
+  border-radius: 20px;
   padding: 4px;
 }
 
 .icones-contato img:hover{
-  width: 41%;
-  height: 41%;
-  border-radius: 3px;
-  border-color: #fdae84;
+  border-radius: 30px;
+  border-color:  rgb(139, 203, 139);
   cursor: pointer;
 }
-.formulario-container{
-  width: 40%;
-  margin-right: 15%;
-  margin-left: 15%;
-}
 
-.btn-form-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  color: #fdae84;
-}
+.contato-formulario1{
+  background-color: rgb(60, 46, 61);
+  position: relative;
+  margin-bottom: 20px;
+  }
 
 .mb-3{
-  color: #fdae84;
+  color: rgb(139, 203, 139);
   font-size: 18px;
 }
 
+.boton{
+  display: flex;
+  justify-content: space-around;
+}
+
 .botao{
-  font-size: 1.2em;
-  background-color: #59429d;
-  border: 0;
-  margin-bottom: 1em;
-  color: #ffffff;
-  padding: 0.2em 0.6em;
+  font-size: 1.1em;
+  color: hwb(0 100% 0%);
+  padding: 0.3em 0.7em;
+  background-color: rgb(139, 203, 139);
   box-shadow: 2px 2px 2px rgb(0,0,0,2);
   text-shadow: 1px 1px 1px rgb(0,0,0,5);
-  position: relative;
   left: 45%;
-  margin-right: -50%;
   transform: translate(-50, -50);
   cursor: pointer;
   transition: all 1s;
@@ -449,6 +437,7 @@ header{
   box-shadow: inset 2px 2px rgb(0,0,0,2);
   text-shadow: none;
   }
+
 
 @media screen and (max-width:480px){
 header{
@@ -507,216 +496,193 @@ header{
   width: 90%;
 }
 
-.contato-conteudo{
+.contato-container1{
   width: 100%;
   flex-direction: column;
   height: auto;
 }
-.contato-informacao{
+.contato-conteudo1{
   width: 90%;
 }
 
-.formulario-container{
+.contatoformulario1{
   padding-top: 80px;
   width: 90%;
 }
 }
 
-/*
-@media screen and (min-width:481){
-  header{
-    flex-direction: column;
-    height: auto;
-  }
-  }
-  .img-container {
-    flex-direction: column;
-    width: 150px;
-    height: 150px;
-  }
-  .nav__items {
-    margin-top: 10px;
-    flex-direction: column;
-  }
-      
-  .presentacao-content{
-    width: 90%;
-   }
+@media screen and (min-width: 481px) and (max-width: 768){
+header{
+  display: flex;
+  justify-content:stretch;
+  height: auto;
+}
   
-  .perfil-redes{
-    justify-content: end;
-  }
-  .presentacao-container{
-    margin-top: 80px;
-    width: 260px;
-    align-items: center;
-  }
-  
-  .Formacao-container{
-    width: 90%;
-  }
-        
-  .Experiencia-container{
-    width: 100%;
-  }
-  
-  .ocupacao{
-    line-height: normal;
-  }
-  .empresa{
-    width: 100%;
-  }
-  
-  .card-container {
-    width: 90%;
-  }
-  
-  .cards-content {
-    flex-direction: column;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  .card {
-    width: 90%;
-    height: auto;
-  }
+.nav__items {
+  margin-top: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  .contato-conteudo{
-    width: 100%;
-    flex-direction: column;
-  }
-  
-  .contato-informacao{
-    width: 90%;
-  }
-  
-  .formulario-container{
-    width: 70%;
-  }
-  }
+#Experiencia{
+  width: 200px;
+}
 
-  /*
-  @media screen and (min-width:768px){
-    header{
-      display: flex;
-      justify-content:space-around;
-      height: auto;
-    }
-    
-    .img-container {
-      flex-direction: column;
-      width: 150px;
-      height: 150px;
-    }
-    .nav__items {
-      margin-top: 10px;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    
-    .presentacao-content{
-      width: 90%;
-      margin-top: 90px;
-     }
-    
-    .Experiencia-container{
-      width: 90%;
-      padding-left: 40%;
-    }
-    .ocupacao{
-      line-height: normal;
-      width: 100%;
-    }
-    .empresa{
-      width: 400px;
-    }
-    
-    .card-container {
-      width: 90%;
-    }
-    
-    .cards-content {
-      flex-direction: column;
-      width: 100%;
-      flex-wrap: wrap;
-    }
-    .card {
-      width: 90%;
-      height: auto;
-    }
-    
-    .contato-conteudo{
-      width: 100%;
-      flex-direction: column;
-    }
-    
-    .contato-informacao{
-      width: 100%;
-    }
-    
-    .formulario-container{
-      width: 100%;
-    }
-    }
+.Experiencia-container{
+  width: 100%
+}
+.card-container {
+  width: 90%;
+}
 
-    @media screen and (min-width:960px){
-      header{
-        display: flex;
-        justify-content:space-around;
-        height: auto;
-      }
+.cards-content {
+  flex-direction: column;
+  width: 100%;
+flex-wrap: wrap;
+}
+.card {
+  width: 90%;
+  height: auto;
+}
+
+.contato-conteudo{
+  width: 100%;
+  flex-direction: column;
+}
+
+.contato-informacao{
+  width: 100%;
+}
+
+.formulario-container{
+  width: 100%;
+}
+}
+
+/*@media screen and (min-width: 820px) and (max-width: 1180){
+
+
+.nav__items {
+  margin-top: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+    
+.presentacao-content{
+  width: 100%;
+  padding-top: 90px;
+  display: flex;
+}
+.perfil-redes-container{
+  margin-top: 600px;
+}
+.presentacao-container{
+  margin-top: 200px;
+  width: 110px;
+}
+    
+.Experiencia-container{
+  width: 90%;
+  padding-left: 40%;
+}
+
+.ocupacao{
+  line-height: normal;
+  width: 100%;
+}
+.empresa{
+  width: 400px;
+}
+    
+.card-container {
+  width: 90%;
+}
+    
+.cards-content {
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.card {
+  width: 90%;
+  height: auto;
+}
+    
+.contato-conteudo{
+  width: 100%;
+  flex-direction: column;
+}
+    
+.contato-informacao{
+  width: 100%;
+}
+    
+.formulario-container{
+  width: 100%;
+}
+}
+
+@media screen and (min-width:961px) and (max-width: 1200px){
+header{
+  display: flex;
+  justify-content:space-around;
+  height: auto;
+}
       
-      .img-container {
-        flex-direction: column;
-        width: 150px;
-        height: 150px;
-      }
-      .nav__items {
-        margin-top: 10px;
-        flex-direction: column;
-        justify-content: space-between;
-      }
+.img-container {
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+}
+
+.nav__items {
+  margin-top: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
       
-      .presentacao-content{
-        width: 90%;
-        margin-top: 90px;
-       }
+.presentacao-content{
+  width: 90%;
+  margin-top: 90px;
+}
       
-      .Experiencia-container{
-        width: 90%;
-        padding-left: 40%;
-      }
-      .ocupacao{
-        line-height: normal;
-        width: 100%;
-      }
-      .empresa{
-        width: 400px;
-      }
+.Experiencia-container{
+  width: 90%;
+  padding-left: 40%;
+}
+
+.ocupacao{
+  line-height: normal;
+  width: 100%;
+}
+
+.empresa{
+  width: 400px;
+}
       
-      .card-container {
-        width: 90%;
-      }
+.card-container {
+  width: 90%;
+}
       
-      .cards-content {
-        width: 100%;
-        flex-wrap: wrap;
-      }
-      .card {
-        width: 45%;
-        height: auto;
-        justify-content: space-between;
-      }
+.cards-content {
+  width: 100%;
+  flex-wrap: wrap;
+}
+.card {
+  width: 45%;
+  height: auto;
+  justify-content: space-between;
+}
       
-      .contato-conteudo{
-        width: 100%;
-      }
+.contato-conteudo{
+  width: 100%;
+}
       
-      .contato-informacao{
-        width: 50%;
-      }
+.contato-informacao{
+  width: 50%;
+}
       
-      .formulario-container{
-        width: 50%;
-      }
-      }
+.formulario-container{
+  width: 50%;
+}
+}*/

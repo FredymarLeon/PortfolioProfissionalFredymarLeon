@@ -7,7 +7,7 @@
     <!--Booststrak-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Booststrak-->
-    <title>Fredymar León</title>
+    <title>Portfolio de Fredymar León</title>
 </head>
 <body>
     <header>
@@ -20,7 +20,7 @@
             <a href="#Formacao">Formação</a>
             <a href="#Experiencia">Experiência</a>
             <a href="#Projetos">Projetos</a>
-            <a href="#Contato">Fale comigo!</a>
+            <a href="#Contato1">Fale comigo!</a>
         </nav>
     </header>
     <div class="img-fondo-container">
@@ -145,71 +145,75 @@
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
+
     <!--Contato-->
-    <section id="Contato"> 
-        <div class="contato-container">
-            <h1>Contato</h1>
+
+    <section id="Contato1"> 
+        <h1>Contato</h1>
+        <div class="contato-container1">
             
-            <div class="contato-conteudo">
-                <div class="contato-informacao">
-                    <p>Deseja entrar em contato comigo?</p>
-                    <p>Preencha o formulario ao lado e entrarei em contato o mais rápido possível.</p>
-                    <p>Você tambem pode me encontrar e acompanhar meu trabalho fazendo click em alguns dos seguintes medios de contato:</p>
-                    <div class="icones-contato">
-                        <a
-                            target="_blank"
-                            href="https://www.instagram.com/fredymarleonatelier/"
-                            class="instagram2"
-                        >
-                            <img
-                                src="Imagens/Instagram_icon.png" alt="icone instagram"
-                            />
-                        </a>
-                        <a 
-                            target="_blank"
-                            href="https://www.youtube.com/@fredymarleon3361"
-                            class="YouTube2-link"
-                        >
-                            <img
-                            src="Imagens/iconfinder-youtube-1.png" alt="icone canal de YouTube"
-                            />
-                        </a>
-                        <a
-                            target="_blank"
-                            href="https://whats.link/fredymarleonatelier"
-                            class="Whatsapp2-link"
-                        >
-                            <img
-                                src="Imagens/whatsapp_12.png" alt="icone de Whatsapp"
-                            />
-                        </a>
-                    </div>
+            <div class="contato-conteudo1">
+                <p>Deseja entrar em contato comigo?</p>
+                <br>
+                <p>Preencha o formulario ao lado <br>e entrarei em contato o mais <br>rápido possível.</p>
+                <br>
+                <p>Você tambem pode me encontrar e <br>acompanhar meu trabalho fazendo <br>click em alguns dos seguintes <br>medios de contato:</p>
+                <br>
+                <div class="icones-contato">
+                    <a
+                        target="_blank"
+                        href="https://www.instagram.com/fredymarleonatelier/"
+                        class="instagram2"
+                    >
+                        <img
+                        src="Imagens/Instagram_icon.png" alt="icone instagram"
+                        />
+                    </a>
+                    <a 
+                        target="_blank"
+                        href="https://www.youtube.com/@fredymarleon3361"
+                        class="YouTube2-link"
+                    >
+                        <img
+                        src="Imagens/iconfinder-youtube-1.png" alt="icone canal de YouTube"
+                        />
+                    </a>
+                    <a
+                        target="_blank"
+                        href="https://whats.link/fredymarleonatelier"
+                        class="Whatsapp2-link"
+                    >
+                        <img
+                        src="Imagens/whatsapp_12.png" alt="icone de Whatsapp"
+                        />
+                    </a>
                 </div>
-               
-                <div class="formulario-container">
+            </div>
+            <div class="contato-formulario1">
+                <form  method="post">
                     <div class="mb-3">
                         <label for="nome" class="form-label">Nome</label>
-                        <input type="nome" class="form-control" id="nome" placeholder="Digite seu nome">
+                        <input type="text" name="name" class="form-control" placeholder="Digite seu nome" required>
                     </div>
                     <div class="mb-3">
                         <label for="E-mail" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="E-mail" placeholder="name@example.com">
+                        <input type="email" name="email" class="form-control" placeholder="name@example.com" required>
                     </div>
                     <div class="mb-3">
                         <label for="assunto" class="form-label">Assunto</label>
-                        <input type="assunto" class="form-control" id="assunto" placeholder="Digite seu assunto" required>
+                        <input type="text" name="assunto"  class="form-control" id="assunto" placeholder="Digite seu assunto" required>
                     </div>
-                      <div class="mb-3">
+                    <div class="mb-3">
                         <label for="mensagen" class="form-label">Mensagem</label>
-                        <textarea class="form-control" id="mensagem" rows="3"></textarea>
-                      </div>
-                      <div>
+                        <textarea  name="message" cols="40" rows="6" placeholder="Digite sua mensagem" class="form-control" required></textarea>
+                    </div>
+                    <div class="boton">
+                        <button class="botao" type="reset">Limpar</button>
                         <button class="botao" type="submit">Enviar</button>
-                      </div>
-                </div> 
+                    </div>
+                </form>
             </div>
-        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
