@@ -3,6 +3,7 @@ const username = document.getElementById("username");
 const email = document.getElementById("email");
 const assunto = document.getElementById("assunto");
 const mensagem = document.getElementById("mensagem");
+const repositorios = document.getElementById("repositorios")
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -76,3 +77,44 @@ function checkEmail(email) {
     email
   );
 }
+
+//portafolio javaScript
+
+const getApiGitHub = () => {
+  fetch("https://api.github.com/users/FredymarLeon/repos").then(async (res) => {
+    if (!res.ok) {
+      throw new Error(res.status);
+    }
+
+    let data = await res.json();
+    console.log(data)
+    data.map((repo) => {
+      let project = document.createElement("div");
+      project.classList.add("repos");
+      project.innerHTML = `
+      <div class="project">
+        <div>
+          <h4 class="project-title">${repo.name}</h4>
+          <a target="_blank" href="${repo.html_url}" class="url">${
+        repo.html_url
+      }</a>
+        </div>
+        <div class="data-punto">
+          <span class="data">${Intl.DateTimeFormat("pt-BR").format(
+            new Date(repo.created_at)
+          )}</span>
+          <div class="punto">
+            <div class="circulo"></div>
+            <span class="lenguaje">${repo.language}</span>
+          </div>
+        </div>
+      </div>
+      `;
+
+    repositorios.appendChild(project);
+  });
+
+});
+}
+
+getApiGitHub();

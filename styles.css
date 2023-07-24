@@ -485,6 +485,64 @@ button:focus{
   visibility: visible;
 }
 
+.project {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 16px;
+  margin-top: 16px;
+  background-color: white;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  color: #0b5ed7;
+}
+
+.url {
+  color: #535352;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.data {
+  color: #535352;
+  font-size: 0.8rem;
+  border: 1px solid #535352;
+  padding: 4px;
+  border-radius: 16px;
+}
+
+.punto {
+  display: flex;
+  align-items: center;
+}
+
+.data-punto {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.lenguaje {
+  color: black;
+  font-size: 1rem;
+  margin-left: 4px;
+}
+
+.circulo {
+  margin: 0;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #0b5ed7;
+}
+
 /*Responsibidad
 @media screen and (max-width:480px){
 header{
