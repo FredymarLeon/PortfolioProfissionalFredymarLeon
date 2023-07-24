@@ -1,16 +1,20 @@
 const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
+const assunto = document.getElementById("assunto");
+const mensagem = document.getElementById("mensagem");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
+  
   checkInputs();
 });
 
 function checkInputs() {
   const usernameValue = username.value;
   const emailValue = email.value;
+  const assuntoValue = assunto.value;
+  const mensagemValue = mensagem.value;
 
   if (usernameValue === "") {
     setErrorFor(username, "O nome de usuário é obrigatório.");
@@ -26,6 +30,18 @@ function checkInputs() {
     setSuccessFor(email);
   }
 
+  if (assuntoValue === "") {
+    setErrorFor(assunto, "O assunto é obrigatório.");
+  } else {
+    setSuccessFor(assunto);
+  }
+
+  if (mensagemValue === "") {
+    setErrorFor(mensagem, "A mensagem é obrigatória.");
+  } else {
+    setSuccessFor(mensagem);
+  }
+
   const formControls = form.querySelectorAll(".form-control");
 
   const formIsValid = [...formControls].every((formControl) => {
@@ -33,16 +49,16 @@ function checkInputs() {
   });
 
   if (formIsValid) {
-    console.log("O formulário está 100% válido!");
+    console.log("O formulário está 100% validado!")
   }
 }
 
-function setErrorFor(input, message) {
+function setErrorFor(input, mensagem) {
   const formControl = input.parentElement;
   const small = formControl.querySelector("small");
 
   // Adicionar el mensaje de error
-  small.innerText = message;
+  small.innerText = mensagem;
 
   // Adicionar la clase de error
   formControl.className = "form-control error";
