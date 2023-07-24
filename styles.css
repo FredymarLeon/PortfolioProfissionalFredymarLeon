@@ -404,32 +404,34 @@ width: 100%;
   margin-bottom: 10px;
   padding-bottom: 20px;
   position: relative;
-  background-color: #3c2e3d;
 }
 
 .form-control label{
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .form-control input, textarea{
   border: 2px solid rgb(252, 175, 133);
+  display: block;
   border-radius: 16px;
-  font-size: 14px;
+  font-size: 15px;
   width: 100%;
-  padding: 10px;
+  padding: 8px;
+  margin-bottom: 10px;
 }
-.form i{
+.form-control i{
   position: absolute;
   top: 45px;
-  right: 10px;
+  right: 16px;
   visibility: hidden;
 }
 
-.form small{
+.form-control small{
   position: absolute;
- bottom: 0;
- left: 0;
+  bottom: 0;
+  left: 5px;
+  padding-top: 4px;
   visibility: hidden;
 }
 
@@ -438,7 +440,7 @@ width: 100%;
   justify-content: space-around;
 }
 
-.botao{
+button{
   font-size: 1.1em;
   color: black;
   padding: 0.3em 0.7em;
@@ -448,10 +450,38 @@ width: 100%;
   transition: all 1s;
 }
 
-.botao:hover{
+button:hover{
   background-color: #ccbbff;
   box-shadow: inset 2px 2px rgb(0,0,0,2);
   text-shadow: none;
+  border-radius:15px;
+  cursor: pointer;
+}
+
+button:focus{
+  background-color: rgb(139, 203, 139);
+  box-shadow: inset 4px 4px rgb(0,0,0,3);
+  text-shadow: none;
+  border-radius:18px;
+}
+
+.form-control.success input {
+  border-color: #10d361;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
 }
 
 /*Responsibidad
